@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Crash_Launcher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Crash_Launcher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
