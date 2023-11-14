@@ -1,0 +1,14 @@
+{
+  "Infos": [
+    {
+      "name": "简体中文",
+      "code": "zh-CN",
+      "author": "Sciencekill"
+    },
+    {
+      "name": "American English",
+      "code": "en-US",
+      "author": "Sciencekill"
+    }
+  ]
+}
