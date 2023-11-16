@@ -17,6 +17,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Forms\NoInternetWindow.xaml" />
+    <None Remove="Forms\ServerConnectionErrorWindow.xaml" />
     <None Remove="Forms\SplashWindow.xaml" />
     <None Remove="Resources\Images\logo.png" />
   </ItemGroup>
@@ -48,6 +49,11 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forms\ServerConnectionErrorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Forms\NoInternetWindow.xaml">

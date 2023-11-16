@@ -1,10 +1,9 @@
-using WinUIEx;
 using Crash_Launcher.Helpers;
-using Windows.Graphics;
-using System;
 using Microsoft.UI.Windowing;
 using Microsoft.UI;
-using Windows.ApplicationModel.Core;
+using WinUIEx;
+using Microsoft.UI.Xaml;
+
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -13,10 +12,10 @@ namespace Crash_Launcher.Forms
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class NoInternetWindow : WindowEx
+    public sealed partial class ServerConnectionErrorWindow : WindowEx
     {
-        private const float Scale = 0.6f;
-        public NoInternetWindow()
+        private static float Scale = 0.6f;
+        public ServerConnectionErrorWindow()
         {
             InitializeComponent();
             var appWindow = WindowHelper.GetAppWindowForCurrentWindow(this);

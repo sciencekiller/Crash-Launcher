@@ -8,6 +8,8 @@ using Crash_Launcher.Forms;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using Crash_Launcher.DataStructure;
 
 namespace Crash_Launcher
 {
@@ -36,7 +38,7 @@ namespace Crash_Launcher
             (m_window.Content as FrameworkElement).Loaded += OnLoaded;
             m_window.Activate();
         }
-        private void OnLoaded(object sender, RoutedEventArgs e)
+        private async void OnLoaded(object sender, RoutedEventArgs e)
         {
             // 2. Check connection and show dialog
             (m_window.Content as FrameworkElement).Loaded -= OnLoaded;
@@ -48,6 +50,14 @@ namespace Crash_Launcher
                 noWifiWindow.Activate();
                 m_window.Close();
                 m_window = noWifiWindow;
+            }
+            else if (await InternetHelper.getFastestProfileServer() == true)
+            {
+                isCollapsed = true;
+                var noServerWindow = new ServerConnectionErrorWindow();
+                noServerWindow.Activate();
+                m_window.Close();
+                m_window = noServerWindow;
             }
 
             // 3. Show main window
@@ -66,7 +76,7 @@ namespace Crash_Launcher
         private void InitForms()
         {
             //下载本地化资源
-
+            Trace.WriteLine(InternetHelper.getProfileServerAddress(AppConfig.FastestProfileServer));
         }
 
         private Window m_window;

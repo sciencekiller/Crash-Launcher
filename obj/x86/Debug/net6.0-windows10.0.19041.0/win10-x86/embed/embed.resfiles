@@ -1,3 +1,4 @@
 App.xbf
 Forms\NoInternetWindow.xbf
+Forms\ServerConnectionErrorWindow.xbf
 Forms\SplashWindow.xbf

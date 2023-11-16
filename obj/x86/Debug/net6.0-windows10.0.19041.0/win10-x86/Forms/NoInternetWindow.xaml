@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <winuiex:WindowEx
     x:Class="Crash_Launcher.Forms.NoInternetWindow"
     xmlns:winuiex="using:WinUIEx"
@@ -16,16 +16,17 @@
             <RowDefinition/>
             <RowDefinition Height="64"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Vertical" Grid.Row="1" x:Name="Header" Margin="36,0,36,0">
+        <StackPanel x:ConnectionId='2' Orientation="Vertical" Grid.Row="1" x:Name="Header" Margin="36,0,36,0">
             <TextBlock FontWeight="Black" FontSize="36">No Internet connection</TextBlock>
             <TextBlock FontWeight="Light" FontSize="18">无互联网链接</TextBlock>
             <TextBlock FontWeight="Light" FontSize="18">Не подключен к Интернету</TextBlock>
         </StackPanel>
-        <StackPanel Orientation="Vertical" Grid.Row="2" x:Name="Detail" Margin="36,0,36,0">
+        <StackPanel x:ConnectionId='3' Orientation="Vertical" Grid.Row="2" x:Name="Detail" Margin="36,0,36,0">
             <TextBlock FontWeight="Bold" FontSize="18" TextWrapping="Wrap" Margin="0,0,0,5">Oops! We can't connect to the internet. You know that connecting to the internet is important for Crash Launcher to launch, so check your internet connection.</TextBlock>
             <TextBlock FontWeight="Light" FontSize="12" TextWrapping="Wrap" Margin="0,0,0,5">糟糕！我们无法连接到互联网。你一定知道连接到互联网对Crash Launcher的启动十分重要，所以请检查你的网络连接。</TextBlock>
             <TextBlock FontWeight="Light" FontSize="12" TextWrapping="Wrap" Margin="0,0,0,5">Наихудший! Мы не можем подключиться к Интернету. Вы знаете, что подключение к Интернету важно для запуска Crash Launcher, поэтому проверьте подключение к Интернету.</TextBlock>
         </StackPanel>
-        <Button CornerRadius="7" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="16" Click="Button_Click" Width="128">Close/关闭</Button>
+        <Button x:ConnectionId='4' CornerRadius="7" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="16"                      Width="128">Close/关闭</Button>
     </Grid>
 </winuiex:WindowEx>
+

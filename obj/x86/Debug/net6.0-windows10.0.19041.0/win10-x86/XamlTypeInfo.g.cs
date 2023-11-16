@@ -224,61 +224,73 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[25];
+            _typeNameTable = new string[31];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "WinUIEx.WindowEx";
-            _typeNameTable[5] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[6] = "Microsoft.UI.Windowing.AppWindow";
-            _typeNameTable[7] = "WinUIEx.Icon";
-            _typeNameTable[8] = "String";
-            _typeNameTable[9] = "WinUIEx.WindowState";
-            _typeNameTable[10] = "System.Enum";
-            _typeNameTable[11] = "System.ValueType";
-            _typeNameTable[12] = "Microsoft.UI.Windowing.AppWindowPresenter";
-            _typeNameTable[13] = "Microsoft.UI.Windowing.AppWindowPresenterKind";
-            _typeNameTable[14] = "Double";
-            _typeNameTable[15] = "WinUIEx.SystemBackdrop";
-            _typeNameTable[16] = "Crash_Launcher.Forms.NoInternetWindow";
-            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.ProgressRing";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[21] = "Crash_Launcher.Forms.SplashWindow";
-            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[23] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[24] = "Int32";
+            _typeNameTable[4] = "Microsoft.UI.Xaml.Media.AcrylicBrush";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Media.XamlCompositionBrushBase";
+            _typeNameTable[6] = "Windows.UI.Color";
+            _typeNameTable[7] = "System.ValueType";
+            _typeNameTable[8] = "Double";
+            _typeNameTable[9] = "System.Nullable`1<Double>";
+            _typeNameTable[10] = "TimeSpan";
+            _typeNameTable[11] = "WinUIEx.WindowEx";
+            _typeNameTable[12] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[13] = "Microsoft.UI.Windowing.AppWindow";
+            _typeNameTable[14] = "WinUIEx.Icon";
+            _typeNameTable[15] = "String";
+            _typeNameTable[16] = "WinUIEx.WindowState";
+            _typeNameTable[17] = "System.Enum";
+            _typeNameTable[18] = "Microsoft.UI.Windowing.AppWindowPresenter";
+            _typeNameTable[19] = "Microsoft.UI.Windowing.AppWindowPresenterKind";
+            _typeNameTable[20] = "WinUIEx.SystemBackdrop";
+            _typeNameTable[21] = "Crash_Launcher.Forms.NoInternetWindow";
+            _typeNameTable[22] = "Crash_Launcher.Forms.ServerConnectionErrorWindow";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[27] = "Crash_Launcher.Forms.SplashWindow";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[29] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[30] = "Int32";
 
-            _typeTable = new global::System.Type[25];
+            _typeTable = new global::System.Type[31];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::WinUIEx.WindowEx);
-            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[6] = typeof(global::Microsoft.UI.Windowing.AppWindow);
-            _typeTable[7] = typeof(global::WinUIEx.Icon);
-            _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::WinUIEx.WindowState);
-            _typeTable[10] = typeof(global::System.Enum);
-            _typeTable[11] = typeof(global::System.ValueType);
-            _typeTable[12] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenter);
-            _typeTable[13] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenterKind);
-            _typeTable[14] = typeof(global::System.Double);
+            _typeTable[4] = typeof(global::Microsoft.UI.Xaml.Media.AcrylicBrush);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Media.XamlCompositionBrushBase);
+            _typeTable[6] = typeof(global::Windows.UI.Color);
+            _typeTable[7] = typeof(global::System.ValueType);
+            _typeTable[8] = typeof(global::System.Double);
+            _typeTable[9] = typeof(global::System.Nullable<global::System.Double>);
+            _typeTable[10] = typeof(global::System.TimeSpan);
+            _typeTable[11] = typeof(global::WinUIEx.WindowEx);
+            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[13] = typeof(global::Microsoft.UI.Windowing.AppWindow);
+            _typeTable[14] = typeof(global::WinUIEx.Icon);
+            _typeTable[15] = typeof(global::System.String);
+            _typeTable[16] = typeof(global::WinUIEx.WindowState);
+            _typeTable[17] = typeof(global::System.Enum);
+            _typeTable[18] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenter);
+            _typeTable[19] = typeof(global::Microsoft.UI.Windowing.AppWindowPresenterKind);
 #pragma warning disable 0618  //   Warning on Deprecated usage
-            _typeTable[15] = typeof(global::WinUIEx.SystemBackdrop);
+            _typeTable[20] = typeof(global::WinUIEx.SystemBackdrop);
 #pragma warning restore 0618
-            _typeTable[16] = typeof(global::Crash_Launcher.Forms.NoInternetWindow);
-            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[21] = typeof(global::Crash_Launcher.Forms.SplashWindow);
-            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[23] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[24] = typeof(global::System.Int32);
+            _typeTable[21] = typeof(global::Crash_Launcher.Forms.NoInternetWindow);
+            _typeTable[22] = typeof(global::Crash_Launcher.Forms.ServerConnectionErrorWindow);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[27] = typeof(global::Crash_Launcher.Forms.SplashWindow);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[29] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[30] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -314,11 +326,13 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_WindowEx() { return new global::WinUIEx.WindowEx(); }
-        private object Activate_16_NoInternetWindow() { return new global::Crash_Launcher.Forms.NoInternetWindow(); }
-        private object Activate_17_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
-        private object Activate_21_SplashWindow() { return new global::Crash_Launcher.Forms.SplashWindow(); }
-        private object Activate_22_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_4_AcrylicBrush() { return new global::Microsoft.UI.Xaml.Media.AcrylicBrush(); }
+        private object Activate_11_WindowEx() { return new global::WinUIEx.WindowEx(); }
+        private object Activate_21_NoInternetWindow() { return new global::Crash_Launcher.Forms.NoInternetWindow(); }
+        private object Activate_22_ServerConnectionErrorWindow() { return new global::Crash_Launcher.Forms.ServerConnectionErrorWindow(); }
+        private object Activate_23_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_27_SplashWindow() { return new global::Crash_Launcher.Forms.SplashWindow(); }
+        private object Activate_28_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -326,7 +340,7 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_23_IList(object instance, object item)
+        private void VectorAdd_29_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -363,9 +377,53 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  WinUIEx.WindowEx
+            case 4:   //  Microsoft.UI.Xaml.Media.AcrylicBrush
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.XamlCompositionBrushBase"));
+                userType.Activator = Activate_4_AcrylicBrush;
+                userType.AddMemberName("TintColor");
+                userType.AddMemberName("TintOpacity");
+                userType.AddMemberName("AlwaysUseFallback");
+                userType.AddMemberName("TintLuminosityOpacity");
+                userType.AddMemberName("TintTransitionDuration");
+                xamlType = userType;
+                break;
+
+            case 5:   //  Microsoft.UI.Xaml.Media.XamlCompositionBrushBase
+                xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Windows.UI.Color
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.ValueType
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 8:   //  Double
+                xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  System.Nullable`1<Double>
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetBoxedType(GetXamlTypeByName("Double"));
+                userType.BoxInstance = userType.BoxType<global::System.Double>;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 10:   //  TimeSpan
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  WinUIEx.WindowEx
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_4_WindowEx;
+                userType.Activator = Activate_11_WindowEx;
                 userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
                 userType.AddMemberName("WindowContent");
                 userType.AddMemberName("AppWindow");
@@ -391,28 +449,28 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.UI.Xaml.Window
+            case 12:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Microsoft.UI.Windowing.AppWindow
+            case 13:   //  Microsoft.UI.Windowing.AppWindow
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 7:   //  WinUIEx.Icon
+            case 14:   //  WinUIEx.Icon
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.CreateFromStringMethod = global::WinUIEx.Icon.FromFile;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  String
+            case 15:   //  String
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  WinUIEx.WindowState
+            case 16:   //  WinUIEx.WindowState
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::WinUIEx.WindowState.Normal);
                 userType.AddEnumValue("Minimized", global::WinUIEx.WindowState.Minimized);
@@ -420,23 +478,18 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Enum
+            case 17:   //  System.Enum
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 11:   //  System.ValueType
-                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 12:   //  Microsoft.UI.Windowing.AppWindowPresenter
+            case 18:   //  Microsoft.UI.Windowing.AppWindowPresenter
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  Microsoft.UI.Windowing.AppWindowPresenterKind
+            case 19:   //  Microsoft.UI.Windowing.AppWindowPresenterKind
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Default", global::Microsoft.UI.Windowing.AppWindowPresenterKind.Default);
                 userType.AddEnumValue("CompactOverlay", global::Microsoft.UI.Windowing.AppWindowPresenterKind.CompactOverlay);
@@ -445,27 +498,31 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  Double
-                xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 15:   //  WinUIEx.SystemBackdrop
+            case 20:   //  WinUIEx.SystemBackdrop
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Crash_Launcher.Forms.NoInternetWindow
+            case 21:   //  Crash_Launcher.Forms.NoInternetWindow
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinUIEx.WindowEx"));
-                userType.Activator = Activate_16_NoInternetWindow;
+                userType.Activator = Activate_21_NoInternetWindow;
                 userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+            case 22:   //  Crash_Launcher.Forms.ServerConnectionErrorWindow
+                userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinUIEx.WindowEx"));
+                userType.Activator = Activate_22_ServerConnectionErrorWindow;
+                userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  Microsoft.UI.Xaml.Controls.ProgressRing
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_17_ProgressRing;
+                userType.Activator = Activate_23_ProgressRing;
                 userType.AddMemberName("IsActive");
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("Maximum");
@@ -475,31 +532,31 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.Controls.Control
+            case 24:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+            case 25:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Microsoft.UI.Xaml.DependencyObject
+            case 26:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 21:   //  Crash_Launcher.Forms.SplashWindow
+            case 27:   //  Crash_Launcher.Forms.SplashWindow
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinUIEx.WindowEx"));
-                userType.Activator = Activate_21_SplashWindow;
+                userType.Activator = Activate_27_SplashWindow;
                 userType.SetContentPropertyName("WinUIEx.WindowEx.WindowContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 28:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_22_TreeViewNode;
+                userType.Activator = Activate_28_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -511,14 +568,14 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 23:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 29:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_23_IList;
+                userType.CollectionAdd = VectorAdd_29_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Int32
+            case 30:   //  Int32
                 xamlType = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -590,309 +647,359 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
             that.UseCompactResources = (global::System.Boolean)Value;
         }
-        private object get_1_WindowEx_WindowContent(object instance)
+        private object get_1_AcrylicBrush_TintColor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            return that.TintColor;
+        }
+        private void set_1_AcrylicBrush_TintColor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            that.TintColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_2_AcrylicBrush_TintOpacity(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            return that.TintOpacity;
+        }
+        private void set_2_AcrylicBrush_TintOpacity(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            that.TintOpacity = (global::System.Double)Value;
+        }
+        private object get_3_AcrylicBrush_AlwaysUseFallback(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            return that.AlwaysUseFallback;
+        }
+        private void set_3_AcrylicBrush_AlwaysUseFallback(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            that.AlwaysUseFallback = (global::System.Boolean)Value;
+        }
+        private object get_4_AcrylicBrush_TintLuminosityOpacity(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            return that.TintLuminosityOpacity;
+        }
+        private void set_4_AcrylicBrush_TintLuminosityOpacity(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            that.TintLuminosityOpacity = (global::System.Nullable<global::System.Double>)Value;
+        }
+        private object get_5_AcrylicBrush_TintTransitionDuration(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            return that.TintTransitionDuration;
+        }
+        private void set_5_AcrylicBrush_TintTransitionDuration(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Media.AcrylicBrush)instance;
+            that.TintTransitionDuration = (global::System.TimeSpan)Value;
+        }
+        private object get_6_WindowEx_WindowContent(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.WindowContent;
         }
-        private void set_1_WindowEx_WindowContent(object instance, object Value)
+        private void set_6_WindowEx_WindowContent(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.WindowContent = (global::System.Object)Value;
         }
-        private object get_2_WindowEx_AppWindow(object instance)
+        private object get_7_WindowEx_AppWindow(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.AppWindow;
         }
-        private object get_3_WindowEx_TaskBarIcon(object instance)
+        private object get_8_WindowEx_TaskBarIcon(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.TaskBarIcon;
         }
-        private void set_3_WindowEx_TaskBarIcon(object instance, object Value)
+        private void set_8_WindowEx_TaskBarIcon(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.TaskBarIcon = (global::WinUIEx.Icon)Value;
         }
-        private object get_4_WindowEx_Title(object instance)
+        private object get_9_WindowEx_Title(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.Title;
         }
-        private void set_4_WindowEx_Title(object instance, object Value)
+        private void set_9_WindowEx_Title(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_5_WindowEx_PersistenceId(object instance)
+        private object get_10_WindowEx_PersistenceId(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.PersistenceId;
         }
-        private void set_5_WindowEx_PersistenceId(object instance, object Value)
+        private void set_10_WindowEx_PersistenceId(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.PersistenceId = (global::System.String)Value;
         }
-        private object get_6_WindowEx_IsTitleBarVisible(object instance)
+        private object get_11_WindowEx_IsTitleBarVisible(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsTitleBarVisible;
         }
-        private void set_6_WindowEx_IsTitleBarVisible(object instance, object Value)
+        private void set_11_WindowEx_IsTitleBarVisible(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsTitleBarVisible = (global::System.Boolean)Value;
         }
-        private object get_7_WindowEx_IsMinimizable(object instance)
+        private object get_12_WindowEx_IsMinimizable(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsMinimizable;
         }
-        private void set_7_WindowEx_IsMinimizable(object instance, object Value)
+        private void set_12_WindowEx_IsMinimizable(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsMinimizable = (global::System.Boolean)Value;
         }
-        private object get_8_WindowEx_IsMaximizable(object instance)
+        private object get_13_WindowEx_IsMaximizable(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsMaximizable;
         }
-        private void set_8_WindowEx_IsMaximizable(object instance, object Value)
+        private void set_13_WindowEx_IsMaximizable(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsMaximizable = (global::System.Boolean)Value;
         }
-        private object get_9_WindowEx_IsResizable(object instance)
+        private object get_14_WindowEx_IsResizable(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsResizable;
         }
-        private void set_9_WindowEx_IsResizable(object instance, object Value)
+        private void set_14_WindowEx_IsResizable(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsResizable = (global::System.Boolean)Value;
         }
-        private object get_10_WindowEx_WindowState(object instance)
+        private object get_15_WindowEx_WindowState(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.WindowState;
         }
-        private void set_10_WindowEx_WindowState(object instance, object Value)
+        private void set_15_WindowEx_WindowState(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.WindowState = (global::WinUIEx.WindowState)Value;
         }
-        private object get_11_WindowEx_IsShownInSwitchers(object instance)
+        private object get_16_WindowEx_IsShownInSwitchers(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsShownInSwitchers;
         }
-        private void set_11_WindowEx_IsShownInSwitchers(object instance, object Value)
+        private void set_16_WindowEx_IsShownInSwitchers(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsShownInSwitchers = (global::System.Boolean)Value;
         }
-        private object get_12_WindowEx_IsAlwaysOnTop(object instance)
+        private object get_17_WindowEx_IsAlwaysOnTop(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.IsAlwaysOnTop;
         }
-        private void set_12_WindowEx_IsAlwaysOnTop(object instance, object Value)
+        private void set_17_WindowEx_IsAlwaysOnTop(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.IsAlwaysOnTop = (global::System.Boolean)Value;
         }
-        private object get_13_WindowEx_Presenter(object instance)
+        private object get_18_WindowEx_Presenter(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.Presenter;
         }
-        private object get_14_WindowEx_PresenterKind(object instance)
+        private object get_19_WindowEx_PresenterKind(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.PresenterKind;
         }
-        private void set_14_WindowEx_PresenterKind(object instance, object Value)
+        private void set_19_WindowEx_PresenterKind(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.PresenterKind = (global::Microsoft.UI.Windowing.AppWindowPresenterKind)Value;
         }
-        private object get_15_WindowEx_Width(object instance)
+        private object get_20_WindowEx_Width(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.Width;
         }
-        private void set_15_WindowEx_Width(object instance, object Value)
+        private void set_20_WindowEx_Width(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.Width = (global::System.Double)Value;
         }
-        private object get_16_WindowEx_Height(object instance)
+        private object get_21_WindowEx_Height(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.Height;
         }
-        private void set_16_WindowEx_Height(object instance, object Value)
+        private void set_21_WindowEx_Height(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.Height = (global::System.Double)Value;
         }
-        private object get_17_WindowEx_MinWidth(object instance)
+        private object get_22_WindowEx_MinWidth(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.MinWidth;
         }
-        private void set_17_WindowEx_MinWidth(object instance, object Value)
+        private void set_22_WindowEx_MinWidth(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.MinWidth = (global::System.Double)Value;
         }
-        private object get_18_WindowEx_MinHeight(object instance)
+        private object get_23_WindowEx_MinHeight(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.MinHeight;
         }
-        private void set_18_WindowEx_MinHeight(object instance, object Value)
+        private void set_23_WindowEx_MinHeight(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.MinHeight = (global::System.Double)Value;
         }
-        private object get_19_WindowEx_MaxWidth(object instance)
+        private object get_24_WindowEx_MaxWidth(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.MaxWidth;
         }
-        private void set_19_WindowEx_MaxWidth(object instance, object Value)
+        private void set_24_WindowEx_MaxWidth(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.MaxWidth = (global::System.Double)Value;
         }
-        private object get_20_WindowEx_MaxHeight(object instance)
+        private object get_25_WindowEx_MaxHeight(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.MaxHeight;
         }
-        private void set_20_WindowEx_MaxHeight(object instance, object Value)
+        private void set_25_WindowEx_MaxHeight(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.MaxHeight = (global::System.Double)Value;
         }
 #pragma warning disable 0618  //   Warning on Deprecated usage
-        private object get_21_WindowEx_Backdrop(object instance)
+        private object get_26_WindowEx_Backdrop(object instance)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             return that.Backdrop;
         }
-        private void set_21_WindowEx_Backdrop(object instance, object Value)
+        private void set_26_WindowEx_Backdrop(object instance, object Value)
         {
             var that = (global::WinUIEx.WindowEx)instance;
             that.Backdrop = (global::WinUIEx.SystemBackdrop)Value;
         }
 #pragma warning restore 0618
-        private object get_22_ProgressRing_IsActive(object instance)
+        private object get_27_ProgressRing_IsActive(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.IsActive;
         }
-        private void set_22_ProgressRing_IsActive(object instance, object Value)
+        private void set_27_ProgressRing_IsActive(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.IsActive = (global::System.Boolean)Value;
         }
-        private object get_23_ProgressRing_IsIndeterminate(object instance)
+        private object get_28_ProgressRing_IsIndeterminate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.IsIndeterminate;
         }
-        private void set_23_ProgressRing_IsIndeterminate(object instance, object Value)
+        private void set_28_ProgressRing_IsIndeterminate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.IsIndeterminate = (global::System.Boolean)Value;
         }
-        private object get_24_ProgressRing_Maximum(object instance)
+        private object get_29_ProgressRing_Maximum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Maximum;
         }
-        private void set_24_ProgressRing_Maximum(object instance, object Value)
+        private void set_29_ProgressRing_Maximum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Maximum = (global::System.Double)Value;
         }
-        private object get_25_ProgressRing_Minimum(object instance)
+        private object get_30_ProgressRing_Minimum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Minimum;
         }
-        private void set_25_ProgressRing_Minimum(object instance, object Value)
+        private void set_30_ProgressRing_Minimum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Minimum = (global::System.Double)Value;
         }
-        private object get_26_ProgressRing_TemplateSettings(object instance)
+        private object get_31_ProgressRing_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.TemplateSettings;
         }
-        private object get_27_ProgressRing_Value(object instance)
+        private object get_32_ProgressRing_Value(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Value;
         }
-        private void set_27_ProgressRing_Value(object instance, object Value)
+        private void set_32_ProgressRing_Value(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Value = (global::System.Double)Value;
         }
-        private object get_28_TreeViewNode_Children(object instance)
+        private object get_33_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_29_TreeViewNode_Content(object instance)
+        private object get_34_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_29_TreeViewNode_Content(object instance, object Value)
+        private void set_34_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_30_TreeViewNode_Depth(object instance)
+        private object get_35_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_31_TreeViewNode_HasChildren(object instance)
+        private object get_36_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_32_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_37_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_32_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_37_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_33_TreeViewNode_IsExpanded(object instance)
+        private object get_38_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_33_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_38_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_34_TreeViewNode_Parent(object instance)
+        private object get_39_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -912,217 +1019,252 @@ namespace Crash_Launcher.Crash_Launcher_XamlTypeInfo
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
                 break;
+            case "Microsoft.UI.Xaml.Media.AcrylicBrush.TintColor":
+                userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.AcrylicBrush");
+                xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TintColor", "Windows.UI.Color");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_AcrylicBrush_TintColor;
+                xamlMember.Setter = set_1_AcrylicBrush_TintColor;
+                break;
+            case "Microsoft.UI.Xaml.Media.AcrylicBrush.TintOpacity":
+                userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.AcrylicBrush");
+                xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TintOpacity", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_AcrylicBrush_TintOpacity;
+                xamlMember.Setter = set_2_AcrylicBrush_TintOpacity;
+                break;
+            case "Microsoft.UI.Xaml.Media.AcrylicBrush.AlwaysUseFallback":
+                userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.AcrylicBrush");
+                xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "AlwaysUseFallback", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_AcrylicBrush_AlwaysUseFallback;
+                xamlMember.Setter = set_3_AcrylicBrush_AlwaysUseFallback;
+                break;
+            case "Microsoft.UI.Xaml.Media.AcrylicBrush.TintLuminosityOpacity":
+                userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.AcrylicBrush");
+                xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TintLuminosityOpacity", "System.Nullable`1<Double>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_AcrylicBrush_TintLuminosityOpacity;
+                xamlMember.Setter = set_4_AcrylicBrush_TintLuminosityOpacity;
+                break;
+            case "Microsoft.UI.Xaml.Media.AcrylicBrush.TintTransitionDuration":
+                userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.AcrylicBrush");
+                xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TintTransitionDuration", "TimeSpan");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_5_AcrylicBrush_TintTransitionDuration;
+                xamlMember.Setter = set_5_AcrylicBrush_TintTransitionDuration;
+                break;
             case "WinUIEx.WindowEx.WindowContent":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "WindowContent", "Object");
-                xamlMember.Getter = get_1_WindowEx_WindowContent;
-                xamlMember.Setter = set_1_WindowEx_WindowContent;
+                xamlMember.Getter = get_6_WindowEx_WindowContent;
+                xamlMember.Setter = set_6_WindowEx_WindowContent;
                 break;
             case "WinUIEx.WindowEx.AppWindow":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "AppWindow", "Microsoft.UI.Windowing.AppWindow");
-                xamlMember.Getter = get_2_WindowEx_AppWindow;
+                xamlMember.Getter = get_7_WindowEx_AppWindow;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinUIEx.WindowEx.TaskBarIcon":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TaskBarIcon", "WinUIEx.Icon");
-                xamlMember.Getter = get_3_WindowEx_TaskBarIcon;
-                xamlMember.Setter = set_3_WindowEx_TaskBarIcon;
+                xamlMember.Getter = get_8_WindowEx_TaskBarIcon;
+                xamlMember.Setter = set_8_WindowEx_TaskBarIcon;
                 break;
             case "WinUIEx.WindowEx.Title":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_4_WindowEx_Title;
-                xamlMember.Setter = set_4_WindowEx_Title;
+                xamlMember.Getter = get_9_WindowEx_Title;
+                xamlMember.Setter = set_9_WindowEx_Title;
                 break;
             case "WinUIEx.WindowEx.PersistenceId":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "PersistenceId", "String");
-                xamlMember.Getter = get_5_WindowEx_PersistenceId;
-                xamlMember.Setter = set_5_WindowEx_PersistenceId;
+                xamlMember.Getter = get_10_WindowEx_PersistenceId;
+                xamlMember.Setter = set_10_WindowEx_PersistenceId;
                 break;
             case "WinUIEx.WindowEx.IsTitleBarVisible":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsTitleBarVisible", "Boolean");
-                xamlMember.Getter = get_6_WindowEx_IsTitleBarVisible;
-                xamlMember.Setter = set_6_WindowEx_IsTitleBarVisible;
+                xamlMember.Getter = get_11_WindowEx_IsTitleBarVisible;
+                xamlMember.Setter = set_11_WindowEx_IsTitleBarVisible;
                 break;
             case "WinUIEx.WindowEx.IsMinimizable":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsMinimizable", "Boolean");
-                xamlMember.Getter = get_7_WindowEx_IsMinimizable;
-                xamlMember.Setter = set_7_WindowEx_IsMinimizable;
+                xamlMember.Getter = get_12_WindowEx_IsMinimizable;
+                xamlMember.Setter = set_12_WindowEx_IsMinimizable;
                 break;
             case "WinUIEx.WindowEx.IsMaximizable":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsMaximizable", "Boolean");
-                xamlMember.Getter = get_8_WindowEx_IsMaximizable;
-                xamlMember.Setter = set_8_WindowEx_IsMaximizable;
+                xamlMember.Getter = get_13_WindowEx_IsMaximizable;
+                xamlMember.Setter = set_13_WindowEx_IsMaximizable;
                 break;
             case "WinUIEx.WindowEx.IsResizable":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsResizable", "Boolean");
-                xamlMember.Getter = get_9_WindowEx_IsResizable;
-                xamlMember.Setter = set_9_WindowEx_IsResizable;
+                xamlMember.Getter = get_14_WindowEx_IsResizable;
+                xamlMember.Setter = set_14_WindowEx_IsResizable;
                 break;
             case "WinUIEx.WindowEx.WindowState":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "WindowState", "WinUIEx.WindowState");
-                xamlMember.Getter = get_10_WindowEx_WindowState;
-                xamlMember.Setter = set_10_WindowEx_WindowState;
+                xamlMember.Getter = get_15_WindowEx_WindowState;
+                xamlMember.Setter = set_15_WindowEx_WindowState;
                 break;
             case "WinUIEx.WindowEx.IsShownInSwitchers":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsShownInSwitchers", "Boolean");
-                xamlMember.Getter = get_11_WindowEx_IsShownInSwitchers;
-                xamlMember.Setter = set_11_WindowEx_IsShownInSwitchers;
+                xamlMember.Getter = get_16_WindowEx_IsShownInSwitchers;
+                xamlMember.Setter = set_16_WindowEx_IsShownInSwitchers;
                 break;
             case "WinUIEx.WindowEx.IsAlwaysOnTop":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsAlwaysOnTop", "Boolean");
-                xamlMember.Getter = get_12_WindowEx_IsAlwaysOnTop;
-                xamlMember.Setter = set_12_WindowEx_IsAlwaysOnTop;
+                xamlMember.Getter = get_17_WindowEx_IsAlwaysOnTop;
+                xamlMember.Setter = set_17_WindowEx_IsAlwaysOnTop;
                 break;
             case "WinUIEx.WindowEx.Presenter":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Presenter", "Microsoft.UI.Windowing.AppWindowPresenter");
-                xamlMember.Getter = get_13_WindowEx_Presenter;
+                xamlMember.Getter = get_18_WindowEx_Presenter;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinUIEx.WindowEx.PresenterKind":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "PresenterKind", "Microsoft.UI.Windowing.AppWindowPresenterKind");
-                xamlMember.Getter = get_14_WindowEx_PresenterKind;
-                xamlMember.Setter = set_14_WindowEx_PresenterKind;
+                xamlMember.Getter = get_19_WindowEx_PresenterKind;
+                xamlMember.Setter = set_19_WindowEx_PresenterKind;
                 break;
             case "WinUIEx.WindowEx.Width":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Width", "Double");
-                xamlMember.Getter = get_15_WindowEx_Width;
-                xamlMember.Setter = set_15_WindowEx_Width;
+                xamlMember.Getter = get_20_WindowEx_Width;
+                xamlMember.Setter = set_20_WindowEx_Width;
                 break;
             case "WinUIEx.WindowEx.Height":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Height", "Double");
-                xamlMember.Getter = get_16_WindowEx_Height;
-                xamlMember.Setter = set_16_WindowEx_Height;
+                xamlMember.Getter = get_21_WindowEx_Height;
+                xamlMember.Setter = set_21_WindowEx_Height;
                 break;
             case "WinUIEx.WindowEx.MinWidth":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "MinWidth", "Double");
-                xamlMember.Getter = get_17_WindowEx_MinWidth;
-                xamlMember.Setter = set_17_WindowEx_MinWidth;
+                xamlMember.Getter = get_22_WindowEx_MinWidth;
+                xamlMember.Setter = set_22_WindowEx_MinWidth;
                 break;
             case "WinUIEx.WindowEx.MinHeight":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "MinHeight", "Double");
-                xamlMember.Getter = get_18_WindowEx_MinHeight;
-                xamlMember.Setter = set_18_WindowEx_MinHeight;
+                xamlMember.Getter = get_23_WindowEx_MinHeight;
+                xamlMember.Setter = set_23_WindowEx_MinHeight;
                 break;
             case "WinUIEx.WindowEx.MaxWidth":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "MaxWidth", "Double");
-                xamlMember.Getter = get_19_WindowEx_MaxWidth;
-                xamlMember.Setter = set_19_WindowEx_MaxWidth;
+                xamlMember.Getter = get_24_WindowEx_MaxWidth;
+                xamlMember.Setter = set_24_WindowEx_MaxWidth;
                 break;
             case "WinUIEx.WindowEx.MaxHeight":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "MaxHeight", "Double");
-                xamlMember.Getter = get_20_WindowEx_MaxHeight;
-                xamlMember.Setter = set_20_WindowEx_MaxHeight;
+                xamlMember.Getter = get_25_WindowEx_MaxHeight;
+                xamlMember.Setter = set_25_WindowEx_MaxHeight;
                 break;
             case "WinUIEx.WindowEx.Backdrop":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinUIEx.WindowEx");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Backdrop", "WinUIEx.SystemBackdrop");
-                xamlMember.Getter = get_21_WindowEx_Backdrop;
-                xamlMember.Setter = set_21_WindowEx_Backdrop;
+                xamlMember.Getter = get_26_WindowEx_Backdrop;
+                xamlMember.Setter = set_26_WindowEx_Backdrop;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_ProgressRing_IsActive;
-                xamlMember.Setter = set_22_ProgressRing_IsActive;
+                xamlMember.Getter = get_27_ProgressRing_IsActive;
+                xamlMember.Setter = set_27_ProgressRing_IsActive;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_ProgressRing_IsIndeterminate;
-                xamlMember.Setter = set_23_ProgressRing_IsIndeterminate;
+                xamlMember.Getter = get_28_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_28_ProgressRing_IsIndeterminate;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_ProgressRing_Maximum;
-                xamlMember.Setter = set_24_ProgressRing_Maximum;
+                xamlMember.Getter = get_29_ProgressRing_Maximum;
+                xamlMember.Setter = set_29_ProgressRing_Maximum;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_ProgressRing_Minimum;
-                xamlMember.Setter = set_25_ProgressRing_Minimum;
+                xamlMember.Getter = get_30_ProgressRing_Minimum;
+                xamlMember.Setter = set_30_ProgressRing_Minimum;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
-                xamlMember.Getter = get_26_ProgressRing_TemplateSettings;
+                xamlMember.Getter = get_31_ProgressRing_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Value", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_ProgressRing_Value;
-                xamlMember.Setter = set_27_ProgressRing_Value;
+                xamlMember.Getter = get_32_ProgressRing_Value;
+                xamlMember.Setter = set_32_ProgressRing_Value;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_28_TreeViewNode_Children;
+                xamlMember.Getter = get_33_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_TreeViewNode_Content;
-                xamlMember.Setter = set_29_TreeViewNode_Content;
+                xamlMember.Getter = get_34_TreeViewNode_Content;
+                xamlMember.Setter = set_34_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_TreeViewNode_Depth;
+                xamlMember.Getter = get_35_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_36_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_32_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_32_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_37_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_37_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_33_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_38_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_38_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::Crash_Launcher.Crash_Launcher_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_34_TreeViewNode_Parent;
+                xamlMember.Getter = get_39_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

@@ -522,3 +522,8 @@ D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-
 D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\SplashWindow.xaml
 D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\NoInternetWindow.xbf
 D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\SplashWindow.xbf
+D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.g.i.cs
+D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.g.cs
+D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xaml
+D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xbf
+D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xbf
