@@ -26,6 +26,8 @@ namespace Crash_Launcher.Helpers
                     return "https://raw.githubusercontent.com/sciencekiller/Crash-Launcher/main/";
                 case ProfileServers.Gitlab:
                     return "https://gitlab.com/sciencekiller/Crash-Launcher/-/raw/main/";
+                case ProfileServers.BitBucket:
+                    return "https://bitbucket.org/crash-launcher/mainapp/raw/9e0839d692b08c092b44c38a5fa2334f78ef85ce/";
                 default:
                     return "https://gitlab.com/sciencekiller/Crash-Launcher/-/raw/main/";
             }
@@ -46,6 +48,7 @@ namespace Crash_Launcher.Helpers
                 _stopWatch.Start();
                 await httpClient.GetByteArrayAsync(serverAddress+"ServerTest.txt");
                 _stopWatch.Stop();
+                Trace.WriteLine(_stopWatch.ElapsedMilliseconds);
                 if (_stopWatch.ElapsedMilliseconds < _fastestSpeed)
                 {
                     _fastestServer = server;

@@ -75,6 +75,7 @@ namespace Crash_Launcher
         }
         private void InitForms()
         {
+            Trace.WriteLine(InternetHelper.getProfileServerAddress(AppConfig.FastestProfileServer));
             //下载本地化资源
         }
 
