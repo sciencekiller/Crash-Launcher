@@ -12,8 +12,8 @@ namespace Crash_Launcher.DataStructure
         {
             None,
             Github,
-            Gitee,
             Gitlab
         };
+
     }
 }

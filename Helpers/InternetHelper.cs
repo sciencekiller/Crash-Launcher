@@ -24,8 +24,6 @@ namespace Crash_Launcher.Helpers
             {
                 case ProfileServers.Github:
                     return "https://raw.githubusercontent.com/sciencekiller/Crash-Launcher/main/";
-                case ProfileServers.Gitee:
-                    return "https://gitee.com/sciencekiller/Crash-Launcher/raw/main/";
                 case ProfileServers.Gitlab:
                     return "https://gitlab.com/sciencekiller/Crash-Launcher/-/raw/main/";
                 default:
@@ -38,7 +36,6 @@ namespace Crash_Launcher.Helpers
             ProfileServers _fastestServer=ProfileServers.None;
             foreach(ProfileServers server in Enum.GetValues(typeof(ProfileServers)))
             {
-                Trace.WriteLine(getProfileServerAddress(server));
                 if (server == ProfileServers.None)
                 {
                     continue;
@@ -47,15 +44,7 @@ namespace Crash_Launcher.Helpers
                 HttpClient httpClient = new HttpClient();
                 _stopWatch.Reset();
                 _stopWatch.Start();
-                try
-                {
-                    await httpClient.GetByteArrayAsync(serverAddress+"ServerTest.txt");
-                    
-                }
-                catch (HttpRequestException e)
-                {
-                    Trace.WriteLine(e.Message);
-                }
+                await httpClient.GetByteArrayAsync(serverAddress+"ServerTest.txt");
                 _stopWatch.Stop();
                 if (_stopWatch.ElapsedMilliseconds < _fastestSpeed)
                 {

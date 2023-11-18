@@ -51,7 +51,7 @@ namespace Crash_Launcher
                 m_window.Close();
                 m_window = noWifiWindow;
             }
-            else if (await InternetHelper.getFastestProfileServer() == true)
+            else if (await InternetHelper.getFastestProfileServer() == false)
             {
                 isCollapsed = true;
                 var noServerWindow = new ServerConnectionErrorWindow();
@@ -76,7 +76,6 @@ namespace Crash_Launcher
         private void InitForms()
         {
             //下载本地化资源
-            Trace.WriteLine(InternetHelper.getProfileServerAddress(AppConfig.FastestProfileServer));
         }
 
         private Window m_window;
