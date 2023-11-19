@@ -246,7 +246,6 @@ D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\hostfxr.dll
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\hostpolicy.dll
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore.dll
-D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore_x86_x86_6.0.2423.51814.dll
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordbi.dll
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscorrc.dll
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\msquic.dll
@@ -527,3 +526,5 @@ D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-
 D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xaml
 D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xbf
 D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Forms\ServerConnectionErrorWindow.xbf
+D:\Crash_Launcher\Crash_Launcher\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore_x86_x86_6.0.2523.51912.dll
+D:\Crash_Launcher\Crash_Launcher\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\Crash_Launcher.sourcelink.json

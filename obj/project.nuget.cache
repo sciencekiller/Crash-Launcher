@@ -1,22 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "6UTI/9WUMn6/FcB63Wu7VKltqmbOv9H7U6HHtOA/DXy0L2Qb4ZH89RINy4bnfXTBGn2WZh6zy9P8sD1dHKlZHA==",
+  "dgSpecHash": "13IOmKNPjfpUZ6vNY50H/3IW0IHBuf28zrTs8O6hJe3ALKlKCIYXGD3Y7P5Fgos8WAeG/TDyeWg4DfdIumtvag==",
   "success": true,
   "projectFilePath": "D:\\Crash_Launcher\\Crash_Launcher\\Crash_Launcher.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.2428\\microsoft.windows.sdk.buildtools.10.0.22621.2428.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsappsdk\\1.4.231008000\\microsoft.windowsappsdk.1.4.231008000.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\winui3localizer\\2.1.0\\winui3localizer.2.1.0.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\winuiex\\2.3.3\\winuiex.2.3.3.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.24\\microsoft.netcore.app.runtime.win-x86.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.24\\microsoft.aspnetcore.app.runtime.win-x86.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.24\\microsoft.netcore.app.runtime.win-arm64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.24\\microsoft.aspnetcore.app.runtime.win-x64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.24\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.24\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.24\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.24\\microsoft.netcore.app.runtime.win-x64.6.0.24.nupkg.sha512",
-    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.24\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.24.nupkg.sha512"
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.0\\microsoft.netcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.0\\microsoft.netcore.app.runtime.win-arm64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-arm64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\8.0.0\\microsoft.aspnetcore.app.runtime.win-arm64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.0\\microsoft.netcore.app.runtime.win-x64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

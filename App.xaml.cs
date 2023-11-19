@@ -10,6 +10,8 @@ using System;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using Crash_Launcher.DataStructure;
+using Windows.Storage;
+using WinUI3Localizer;
 
 namespace Crash_Launcher
 {
@@ -40,6 +42,7 @@ namespace Crash_Launcher
         }
         private async void OnLoaded(object sender, RoutedEventArgs e)
         {
+            Trace.WriteLine(SystemEnvironmentHelper.SystemAppDataPath);
             // 2. Check connection and show dialog
             (m_window.Content as FrameworkElement).Loaded -= OnLoaded;
 
@@ -59,12 +62,14 @@ namespace Crash_Launcher
                 m_window.Close();
                 m_window = noServerWindow;
             }
-
+            SystemEnvironmentHelper.createAppDataDirectory();
+            await LanguageHelper.getLocalizationInfo();
+            await LanguageHelper.checkLanguageFiles();
             // 3. Show main window
 
             if (!isCollapsed)
             {
-                InitForms();
+                await InitializeLocalizer();
             }
             //var mainWindow = new MainWindow();
             //mainWindow.Activate();
@@ -73,10 +78,19 @@ namespace Crash_Launcher
             //m_window.Close();
             //m_window = mainWindow;
         }
-        private void InitForms()
+        private async Task InitializeLocalizer()
         {
-            Trace.WriteLine(InternetHelper.getProfileServerAddress(AppConfig.FastestProfileServer));
-            //下载本地化资源
+            // Initialize a "Strings" folder in the executables folder.
+            string StringsFolderPath = Path.Combine(SystemEnvironmentHelper.SystemAppDataPath,"CrashLauncher", "Strings");
+            StorageFolder stringsFolder = await StorageFolder.GetFolderFromPathAsync(StringsFolderPath);
+
+            ILocalizer localizer = await new LocalizerBuilder()
+                .AddStringResourcesFolderForLanguageDictionaries(StringsFolderPath)
+                .SetOptions(options =>
+                {
+                    options.DefaultLanguage = LanguageHelper.appLanguage;
+                })
+                .Build();
         }
 
         private Window m_window;

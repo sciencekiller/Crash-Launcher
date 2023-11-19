@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Crash_Launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d55ee4030a93b809e0c98a739bd2f54dddfab52")]
 [assembly: System.Reflection.AssemblyProductAttribute("Crash_Launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Crash_Launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

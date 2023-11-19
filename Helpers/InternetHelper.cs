@@ -46,7 +46,14 @@ namespace Crash_Launcher.Helpers
                 HttpClient httpClient = new HttpClient();
                 _stopWatch.Reset();
                 _stopWatch.Start();
-                await httpClient.GetByteArrayAsync(serverAddress+"ServerTest.txt");
+                try
+                {
+                    await httpClient.GetByteArrayAsync(serverAddress + "ServerTest.txt");
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
                 _stopWatch.Stop();
                 Trace.WriteLine(_stopWatch.ElapsedMilliseconds);
                 if (_stopWatch.ElapsedMilliseconds < _fastestSpeed)
