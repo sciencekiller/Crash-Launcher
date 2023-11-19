@@ -19,6 +19,7 @@
     <None Remove="Forms\NoInternetWindow.xaml" />
     <None Remove="Forms\ServerConnectionErrorWindow.xaml" />
     <None Remove="Forms\SplashWindow.xaml" />
+    <None Remove="Initialize\InitializeWindow.xaml" />
     <None Remove="Resources\Images\logo.png" />
     <None Remove="Resources\Localization\LocalizationInfo.json" />
   </ItemGroup>
@@ -77,5 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <PRIResource Remove="Resources\Localization\zh-CN\Initialize.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Initialize\InitializeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 </Project>

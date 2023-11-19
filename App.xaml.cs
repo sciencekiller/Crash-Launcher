@@ -12,6 +12,9 @@ using System.Diagnostics;
 using Crash_Launcher.DataStructure;
 using Windows.Storage;
 using WinUI3Localizer;
+using Windows.Security.Cryptography.Core;
+using Crash_Launcher.Initialize;
+using System.Collections.Generic;
 
 namespace Crash_Launcher
 {
@@ -70,6 +73,7 @@ namespace Crash_Launcher
             if (!isCollapsed)
             {
                 await InitializeLocalizer();
+                await InitForms();
             }
             //var mainWindow = new MainWindow();
             //mainWindow.Activate();
@@ -91,6 +95,26 @@ namespace Crash_Launcher
                     options.DefaultLanguage = LanguageHelper.appLanguage;
                 })
                 .Build();
+        }
+        private async Task InitForms()
+        {
+            Window tmpWindow=null;
+            if (!File.Exists(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json")))
+            {
+                tmpWindow = new InitializeWindow();
+            }
+            else
+            {
+                await AppConfigHelper.getAppSetting();
+                List<Enums.InitializeStep> needSet = AppConfig.setting.checkSetting();
+                if (needSet.Count > 0)
+                {
+                    tmpWindow = new InitializeWindow(needSet);
+                }
+            }
+            m_window.Close();
+            tmpWindow.Activate();
+            m_window = tmpWindow;
         }
 
         private Window m_window;

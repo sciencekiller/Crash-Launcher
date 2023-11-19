@@ -13,6 +13,9 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Initialize\InitializeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Forms\ServerConnectionErrorWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -8,13 +8,18 @@ namespace Crash_Launcher.DataStructure
 {
     internal class Enums
     {
-        internal enum ProfileServers
+        public enum ProfileServers
         {
             None,
             Github,
             Gitlab,
             BitBucket
         };
-
+        public enum InitializeStep
+        {
+            Language,
+            Path,
+            CDN
+        }
     }
 }
