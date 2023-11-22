@@ -65,6 +65,7 @@ namespace Crash_Launcher
                 m_window.Close();
                 m_window = noServerWindow;
             }
+            await AppConfigHelper.getAppSetting();
             SystemEnvironmentHelper.createAppDataDirectory();
             await LanguageHelper.getLocalizationInfo();
             await LanguageHelper.checkLanguageFiles();
@@ -105,7 +106,6 @@ namespace Crash_Launcher
             }
             else
             {
-                await AppConfigHelper.getAppSetting();
                 List<Enums.InitializeStep> needSet = AppConfig.setting.checkSetting();
                 if (needSet.Count > 0)
                 {

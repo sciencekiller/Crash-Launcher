@@ -78,6 +78,11 @@ namespace Crash_Launcher.Helpers
         }
         internal static void getAppLanguage()
         {
+            if (AppConfig.setting.language != string.Empty)
+            {
+                appLanguage = AppConfig.setting.language;
+                return;
+            }
             List<string> ls = getSupportLanguages();
             foreach(var l in ls)
             {
