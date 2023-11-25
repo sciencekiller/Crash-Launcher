@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace Crash_Launcher.Helpers
         }
         internal static async Task checkLanguageFiles()
         {
-
+            Trace.WriteLine(appLanguage);
             string path = Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "Strings");
             //创建主文件夹
             if (!Directory.Exists(path))
@@ -36,6 +37,7 @@ namespace Crash_Launcher.Helpers
         }
         internal static List<string> getSupportLanguages(string type = "code")
         {
+            Trace.WriteLine("mmmmm");
             List<string> list = new List<string>();
             foreach (LanguageInfo lang in AppConfig.Languages)
             {
@@ -78,12 +80,12 @@ namespace Crash_Launcher.Helpers
         }
         internal static void getAppLanguage()
         {
-            if (AppConfig.setting.language != string.Empty)
-            {
-                appLanguage = AppConfig.setting.language;
-                return;
-            }
-            List<string> ls = getSupportLanguages();
+            //if (AppConfig.setting.language != string.Empty)
+            //{
+            //appLanguage = AppConfig.setting.language;
+            //return;
+            //}
+            List<string> ls = getSupportLanguages(type:"code");
             foreach(var l in ls)
             {
                 if (l == systemLanguage)

@@ -84,4 +84,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="call D:\Crash_Launcher\PreBuild\bin\Release\net8.0\PreBuild.exe" />
+  </Target>
 </Project>

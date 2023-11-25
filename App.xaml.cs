@@ -65,10 +65,10 @@ namespace Crash_Launcher
                 m_window.Close();
                 m_window = noServerWindow;
             }
-            await AppConfigHelper.getAppSetting();
             SystemEnvironmentHelper.createAppDataDirectory();
             await LanguageHelper.getLocalizationInfo();
-            await LanguageHelper.checkLanguageFiles();
+            await AppConfigHelper.getAppSetting();
+            await LanguageHelper.checkLanguageFiles();/////////爆炸点
             // 3. Show main window
 
             if (!isCollapsed)
@@ -102,6 +102,7 @@ namespace Crash_Launcher
             Window tmpWindow=null;
             if (!File.Exists(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json")))
             {
+                //全部设置
                 tmpWindow = new InitializeWindow();
             }
             else
@@ -109,6 +110,7 @@ namespace Crash_Launcher
                 List<Enums.InitializeStep> needSet = AppConfig.setting.checkSetting();
                 if (needSet.Count > 0)
                 {
+                    //某些设置
                     tmpWindow = new InitializeWindow(needSet);
                 }
             }

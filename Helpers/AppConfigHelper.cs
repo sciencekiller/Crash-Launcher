@@ -9,7 +9,15 @@ namespace Crash_Launcher.Helpers
     {
         internal static async Task getAppSetting()
         {
-            var jsonContent = await File.ReadAllTextAsync(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json"));
+            string jsonContent;
+            if (File.Exists(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json")))
+            {
+                jsonContent = await File.ReadAllTextAsync(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json"));
+            }
+            else
+            {
+                return;
+            }
             AppConfig.setting = JsonSerializer.Deserialize<Setting>(jsonContent);
         }
     }

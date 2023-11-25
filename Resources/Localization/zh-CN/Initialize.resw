@@ -119,5 +119,6 @@
   </resheader>
   <data name="Welcome.Text" xml:space="preserve">
     <value>欢迎来到</value>
+    <comment>欢迎</comment>
   </data>
 </root>

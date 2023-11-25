@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "13IOmKNPjfpUZ6vNY50H/3IW0IHBuf28zrTs8O6hJe3ALKlKCIYXGD3Y7P5Fgos8WAeG/TDyeWg4DfdIumtvag==",
+  "dgSpecHash": "MEBD0Qyf0u2dWFo4ek2F/g+B+2PzkTk9XCD3l5FrCKfeLXzeBmHndZFq69OAGObbSDqdDzTr4AHfA7jhZQWZYQ==",
   "success": true,
   "projectFilePath": "D:\\Crash_Launcher\\Crash_Launcher\\Crash_Launcher.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Sciencekill\\.nuget\\packages\\winui3localizer\\2.1.0\\winui3localizer.2.1.0.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\winuiex\\2.3.3\\winuiex.2.3.3.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.0\\microsoft.netcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.0\\microsoft.netcore.app.crossgen2.win-x64.8.0.0.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
     "C:\\Users\\Sciencekill\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\8.0.0\\microsoft.netcore.app.runtime.win-arm64.8.0.0.nupkg.sha512",
