@@ -7,7 +7,7 @@ namespace Crash_Launcher.Helpers
 {
     internal class AppConfigHelper
     {
-        internal static async Task getAppSetting()
+        internal static async Task<Setting> getAppSetting()
         {
             string jsonContent;
             if (File.Exists(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json")))
@@ -16,9 +16,9 @@ namespace Crash_Launcher.Helpers
             }
             else
             {
-                return;
+                return new Setting();
             }
-            AppConfig.setting = JsonSerializer.Deserialize<Setting>(jsonContent);
+            return JsonSerializer.Deserialize<Setting>(jsonContent);
         }
     }
 }

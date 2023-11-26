@@ -9,7 +9,6 @@ namespace Crash_Launcher.Helpers
     class LanguageHelper
     {
         internal static string systemLanguage = System.Globalization.CultureInfo.InstalledUICulture.Name;
-        internal static string appLanguage=string.Empty;
         internal static string[] files = { "Initialize.resw" };
         private const string defaultLanguage = "en";
         internal static async Task getLocalizationInfo()
@@ -19,30 +18,36 @@ namespace Crash_Launcher.Helpers
         }
         internal static async Task checkLanguageFiles()
         {
-            Trace.WriteLine(appLanguage);
             string path = Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "Strings");
             //创建主文件夹
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
             //获取应用语言
-            if (appLanguage == string.Empty)
-                getAppLanguage();
-            //创建语言文件夹
-            if (!Directory.Exists(Path.Combine(path, appLanguage)))
-                Directory.CreateDirectory(Path.Combine(path,appLanguage));
-            foreach(string f in files)
+            Trace.Write("m");
+            if (AppConfig.Language == string.Empty)
             {
-                await ResourcesHelper.writeResourcesFileToLocalMachine("Resources.Localization." + appLanguage + "." + f, Path.Combine(path, appLanguage, f));
+                getAppLanguage();
+                Trace.WriteLine(AppConfig.Language);
+            }
+            //创建语言文件夹
+            if (!Directory.Exists(Path.Combine(path, AppConfig.Language)))//stucked here
+                Directory.CreateDirectory(Path.Combine(path, AppConfig.Language));
+            string jsonContent = await ResourcesHelper.getStringFromResourcesFile("PrebuildData.LanguageFileHash.json");
+            Trace.Write(jsonContent);
+            List<LanguageChecksum> checksums = JsonSerializer.Deserialize<List<LanguageChecksum>>(jsonContent);
+            foreach (string f in files)
+            {
+                string initcsm = CryptograghyHelper.getChecksumThroughLanguageCode(checksums, AppConfig.Language, "Initialize");//获取应该是的MD5值
+                await ResourcesHelper.writeResourcesFileToLocalMachine("Resources.Localization." + AppConfig.Language + "." + f, Path.Combine(path, AppConfig.Language, f), initcsm);
             }
         }
         internal static List<string> getSupportLanguages(string type = "code")
         {
-            Trace.WriteLine("mmmmm");
             List<string> list = new List<string>();
             foreach (LanguageInfo lang in AppConfig.Languages)
             {
                 if (type == "code")
-                    foreach(var tmp in lang.code)
+                    foreach (var tmp in lang.code)
                         list.Add(tmp);
                 else
                     list.Add(lang.name);
@@ -51,9 +56,9 @@ namespace Crash_Launcher.Helpers
         }
         internal static string getMainCodeFromOtherCode(string code)
         {
-            foreach(LanguageInfo lang in AppConfig.Languages)
+            foreach (LanguageInfo lang in AppConfig.Languages)
             {
-                foreach(string  tmp in lang.code)
+                foreach (string tmp in lang.code)
                 {
                     if (tmp == code)
                     {
@@ -67,7 +72,7 @@ namespace Crash_Launcher.Helpers
         {
             foreach (LanguageInfo lang in AppConfig.Languages)
             {
-                if(lang.name == language)
+                if (lang.name == language)
                 {
                     return lang.code[0];
                 }
@@ -80,20 +85,15 @@ namespace Crash_Launcher.Helpers
         }
         internal static void getAppLanguage()
         {
-            //if (AppConfig.setting.language != string.Empty)
-            //{
-            //appLanguage = AppConfig.setting.language;
-            //return;
-            //}
-            List<string> ls = getSupportLanguages(type:"code");
-            foreach(var l in ls)
+            List<string> ls = getSupportLanguages(type: "code");
+            foreach (var l in ls)
             {
                 if (l == systemLanguage)
                 {
-                    appLanguage = getMainCodeFromOtherCode(systemLanguage);
+                    AppConfig.Language = getMainCodeFromOtherCode(systemLanguage);
                 }
             }
-            appLanguage = defaultLanguage;
+            AppConfig.Language = defaultLanguage;
         }
     }
 }

@@ -117,8 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Welcome.Text" xml:space="preserve">
+  <data name="Back.Text" xml:space="preserve">
+    <value>上一步</value>
+  </data>
+  <data name="CDNSet.Text" xml:space="preserve">
+    <value>CDN:像火箭一样的速度！</value>
+  </data>
+  <data name="CDNSetDetail.Text" xml:space="preserve">
+    <value>你知道吗，Crash Launcher的数据不是存储在一个服务器上，而是储存在世界各地的CDN（内容分发网络）上，以便全世界的人可以飞快地下载数据。在下面的CDN中，选择延时最小的一个，体验火箭一样的速度。</value>
+  </data>
+  <data name="ChoosePath.Text" xml:space="preserve">
+    <value>选择文件夹</value>
+  </data>
+  <data name="Cloudflare.ToolTipService.ToolTip" xml:space="preserve">
+    <value>托管在Backblaze，采用Cloudflare CDN（速度约等于Cloudflare的速度）的储存库（手动添加，可能更新不及时）</value>
+  </data>
+  <data name="DataPathSet.Text" xml:space="preserve">
+    <value>选择你的数据目录</value>
+  </data>
+  <data name="DataPathSetDetail.Text" xml:space="preserve">
+    <value>我们需要一个位置来存放文件，而你可以决定该把数据放在哪里。</value>
+  </data>
+  <data name="Finish.Text" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="Github.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Crash Launcher资源主仓库</value>
+  </data>
+  <data name="Header.Text" xml:space="preserve">
     <value>欢迎来到</value>
-    <comment>欢迎</comment>
+  </data>
+  <data name="LanguageSet.Text" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="LanguageSetDetail.Text" xml:space="preserve">
+    <value>这是正确的语言吗？</value>
+  </data>
+  <data name="Loading.Text" xml:space="preserve">
+    <value>加载中，请稍后</value>
+  </data>
+  <data name="Next.Text" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="Welcome.Text" xml:space="preserve">
+    <value>新的起点，新的飞跃</value>
+  </data>
+  <data name="WelcomeDetail.Text" xml:space="preserve">
+    <value>你可能已经注意到了，Sciencekill Toolkit已经改名为Crash Launcher。这将是一个史诗级的进步。在Crash Launcher，你将体会到无与伦比的便捷与美观。本次大版本更新放弃了丑陋的JavaFX，转而选择了具有Fluent Design系统的WinUI 3，因此，Crash Launcher将完美融入您的Windows11。现在要做的，点击“下一步”，开启一段新的旅程！</value>
   </data>
 </root>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Crash_Launcher.DataStructure
 {
-    internal class Enums
+    public class Enums
     {
         public enum ProfileServers
         {

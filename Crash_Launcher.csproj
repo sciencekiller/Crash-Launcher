@@ -1,90 +1,96 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <WindowsPackageType>None</WindowsPackageType>
-    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
-    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
-    <RootNamespace>Crash_Launcher</RootNamespace>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Platforms>x86;x64;ARM64</Platforms>
-    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
-    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
-    <UseWinUI>true</UseWinUI>
-    <EnableMsixTooling>true</EnableMsixTooling>
-    <UseRidGraph>true</UseRidGraph>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Forms\NoInternetWindow.xaml" />
-    <None Remove="Forms\ServerConnectionErrorWindow.xaml" />
-    <None Remove="Forms\SplashWindow.xaml" />
-    <None Remove="Initialize\InitializeWindow.xaml" />
-    <None Remove="Resources\Images\logo.png" />
-    <None Remove="Resources\Localization\LocalizationInfo.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="icon.ico" />
-    <Content Include="Resources\Images\logo.png" />
-  </ItemGroup>
+	<PropertyGroup>
+		<WindowsPackageType>None</WindowsPackageType>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>Crash_Launcher</RootNamespace>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x86;x64;ARM64</Platforms>
+		<RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+		<PublishProfile>win-$(Platform).pubxml</PublishProfile>
+		<UseWinUI>true</UseWinUI>
+		<EnableMsixTooling>true</EnableMsixTooling>
+		<UseRidGraph>true</UseRidGraph>
+		<ApplicationIcon>icon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Forms\NoInternetWindow.xaml" />
+		<None Remove="Forms\ServerConnectionErrorWindow.xaml" />
+		<None Remove="Forms\SplashWindow.xaml" />
+		<None Remove="Initialize\InitializeWindow.xaml" />
+		<None Remove="PrebuildData\LanguageFileHash.json" />
+		<None Remove="Resources\Images\icon.ico" />
+		<None Remove="Resources\Images\InitBackground.jpg" />
+		<None Remove="Resources\Images\logo.png" />
+		<None Remove="Resources\Localization\LocalizationInfo.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="icon.ico" />
+		<EmbeddedResource Include="PrebuildData\LanguageFileHash.json" />
+		<Content Include="Resources\Images\icon.ico" />
+		<Content Include="Resources\Images\InitBackground.jpg" />
+		<Content Include="Resources\Images\logo.png" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
-    <PackageReference Include="WinUI3Localizer" Version="2.1.0" />
-    <PackageReference Include="WinUIEx" Version="2.3.3" />
-    <Manifest Include="$(ApplicationManifest)" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
+		<PackageReference Include="WinUI3Localizer" Version="2.1.0" />
+		<PackageReference Include="WinUIEx" Version="2.3.3" />
+		<Manifest Include="$(ApplicationManifest)" />
+	</ItemGroup>
 
-  <!-- 
+	<!-- 
     Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
     Tools extension to be activated for this project even if the Windows App SDK Nuget
     package has not yet been restored.
   -->
-  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-    <ProjectCapability Include="Msix" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Forms\ServerConnectionErrorWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Forms\NoInternetWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Forms\SplashWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
+	<ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+		<ProjectCapability Include="Msix" />
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Forms\ServerConnectionErrorWindow.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Forms\NoInternetWindow.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Forms\SplashWindow.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
 
-  <!-- 
+	<!-- 
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution 
     Explorer "Package and Publish" context menu entry to be enabled for this project even if 
     the Windows App SDK Nuget package has not yet been restored.
   -->
-  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
-    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
-  </PropertyGroup>
-  <ItemGroup>
-    <PRIResource Remove="Resources\Localization\en\Initialize.resw" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Localization\en\Initialize.resw" />
-    <EmbeddedResource Include="Resources\Localization\LocalizationInfo.json" />
-    <EmbeddedResource Include="Resources\Localization\zh-CN\Initialize.resw" />
-  </ItemGroup>
-  <ItemGroup>
-    <PRIResource Remove="Resources\Localization\zh-CN\Initialize.resw" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="Initialize\InitializeWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="call D:\Crash_Launcher\PreBuild\bin\Release\net8.0\PreBuild.exe" />
-  </Target>
+	<PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+		<HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+	</PropertyGroup>
+	<ItemGroup>
+		<PRIResource Remove="Resources\Localization\en\Initialize.resw" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\Localization\en\Initialize.resw" />
+		<EmbeddedResource Include="Resources\Localization\LocalizationInfo.json" />
+		<EmbeddedResource Include="Resources\Localization\zh-CN\Initialize.resw" />
+	</ItemGroup>
+	<ItemGroup>
+		<PRIResource Remove="Resources\Localization\zh-CN\Initialize.resw" />
+	</ItemGroup>
+	<ItemGroup>
+		<Page Update="Initialize\InitializeWindow.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</Page>
+	</ItemGroup>
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+		<Exec Command="call D:\Crash_Launcher\PreBuild\bin\Release\net8.0\PreBuild.exe" />
+	</Target>
 </Project>

@@ -117,8 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Welcome.Text" xml:space="preserve">
+  <data name="Back.Text" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="CDNSet.Text" xml:space="preserve">
+    <value>CDN: speed like a rocket</value>
+  </data>
+  <data name="CDNSetDetail.Text" xml:space="preserve">
+    <value>Did you know that Crash Launcher's data is not stored on one server, but on CDNs (Content Delivery Networks) around the world so that people all over the world can download the data on the fly? Among the CDNs below, choose the one with the least latency and experience rocket-like speed.</value>
+  </data>
+  <data name="ChoosePath.Text" xml:space="preserve">
+    <value>Select a folder</value>
+  </data>
+  <data name="Cloudflare.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Hosted at Backblaze, proxied by Cloudflare. (May not be the latest version)</value>
+  </data>
+  <data name="DataPathSet.Text" xml:space="preserve">
+    <value>Select data folder</value>
+  </data>
+  <data name="DataPathSetDetail.Text" xml:space="preserve">
+    <value>We need a place to store our files, and you can decide where to put your data.</value>
+  </data>
+  <data name="Finish.Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="Github.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Crash Launcher main source repository</value>
+  </data>
+  <data name="Header.Text" xml:space="preserve">
     <value>Welcome to</value>
-    <comment>Welcome</comment>
+  </data>
+  <data name="LanguageSet.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LanguageSetDetail.Text" xml:space="preserve">
+    <value>Is this the right language?</value>
+  </data>
+  <data name="Loading.Text" xml:space="preserve">
+    <value>Loading, please wait</value>
+  </data>
+  <data name="Next.Text" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Welcome.Text" xml:space="preserve">
+    <value>New beginning, new experience</value>
+  </data>
+  <data name="WelcomeDetail.Text" xml:space="preserve">
+    <value>As you may have noticed, Sciencekill Toolkit has been renamed to Crash Launcher. It's going to be an epic step forward. In Crash Launcher, you'll find unparalleled convenience and beauty. This major update ditches the ugly JavaFX in favor of WinUI 3 with Fluent Design, so Crash Launcher will fit perfectly into your Windows 11. Now to do it, click "Next" and start a new journey!</value>
   </data>
 </root>

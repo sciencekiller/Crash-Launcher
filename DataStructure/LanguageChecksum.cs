@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Crash_Launcher.DataStructure
 {
-    internal class LanguageInfo
+    internal class LanguageChecksum
     {
-        public string name {  get; set; }
-        public List<string> code {  get; set; }
+        public string code { get; set; }
+        public string Initialize { get; set; }
     }
 }

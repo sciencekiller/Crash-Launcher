@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Resources.Core;
 
 namespace Crash_Launcher.Helpers
 {
@@ -33,6 +34,21 @@ namespace Crash_Launcher.Helpers
                 await stream.CopyToAsync(fs);
             }
             stream.Close();
+        }
+        internal static async Task writeResourcesFileToLocalMachine(string rspath, string optpath,string checksum)
+        {
+            Trace.WriteLine(optpath);
+            Trace.WriteLine(CryptograghyHelper.getSHA256FromFile(optpath));//获取输出文件的MD5
+            if(File.Exists(optpath)&&CryptograghyHelper.getSHA256FromFile(optpath)==checksum)
+            {
+                return;
+            }
+            else if(File.Exists(optpath)&&CryptograghyHelper.getSHA256FromFile(optpath)!=checksum)
+            {
+                File.Delete(optpath);
+            }
+            Trace.Write("mmmm");
+            await writeResourcesFileToLocalMachine(rspath, optpath);
         }
     }
 }

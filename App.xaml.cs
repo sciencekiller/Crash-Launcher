@@ -15,6 +15,7 @@ using WinUI3Localizer;
 using Windows.Security.Cryptography.Core;
 using Crash_Launcher.Initialize;
 using System.Collections.Generic;
+using WinUIEx;
 
 namespace Crash_Launcher
 {
@@ -57,7 +58,7 @@ namespace Crash_Launcher
                 m_window.Close();
                 m_window = noWifiWindow;
             }
-            else if (await InternetHelper.getFastestProfileServer() == false)
+            else if (Debugger.IsAttached==false&&await InternetHelper.getFastestProfileServer() == false)
             {
                 isCollapsed = true;
                 var noServerWindow = new ServerConnectionErrorWindow();
@@ -67,14 +68,15 @@ namespace Crash_Launcher
             }
             SystemEnvironmentHelper.createAppDataDirectory();
             await LanguageHelper.getLocalizationInfo();
-            await AppConfigHelper.getAppSetting();
-            await LanguageHelper.checkLanguageFiles();/////////爆炸点
+            Setting _setting=await AppConfigHelper.getAppSetting();
+            _setting.writeToAppConfig();
+            await LanguageHelper.checkLanguageFiles();
             // 3. Show main window
 
             if (!isCollapsed)
             {
                 await InitializeLocalizer();
-                await InitForms();
+                InitForms();
             }
             //var mainWindow = new MainWindow();
             //mainWindow.Activate();
@@ -93,21 +95,27 @@ namespace Crash_Launcher
                 .AddStringResourcesFolderForLanguageDictionaries(StringsFolderPath)
                 .SetOptions(options =>
                 {
-                    options.DefaultLanguage = LanguageHelper.appLanguage;
+                    options.DefaultLanguage = AppConfig.Language;
                 })
                 .Build();
         }
-        private async Task InitForms()
+        private void InitForms()
         {
             Window tmpWindow=null;
             if (!File.Exists(Path.Combine(SystemEnvironmentHelper.SystemAppDataPath, "CrashLauncher", "config.json")))
             {
+                List<Enums.InitializeStep> tmp=new List<Enums.InitializeStep> ();
+                foreach(Enums.InitializeStep tp in Enum.GetValues(typeof(Enums.InitializeStep)))
+                {
+                    tmp.Add(tp);
+                }
                 //全部设置
-                tmpWindow = new InitializeWindow();
+                tmpWindow = new InitializeWindow(tmp);
             }
             else
             {
-                List<Enums.InitializeStep> needSet = AppConfig.setting.checkSetting();
+                
+                List<Enums.InitializeStep> needSet = AppConfig.checkSetting();
                 if (needSet.Count > 0)
                 {
                     //某些设置
